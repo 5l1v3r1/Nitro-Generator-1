@@ -23,7 +23,7 @@ def gen():
  try: 
   r = requests.get(check, headers=headers, proxies ={'https://discordapp.com': random.choice(allproxies)})
   if r.status_code == 429:
-   print(red, '[RATE-LIMITED] Error')
+   print(red, '[ERROR] Рейт лимиты')
   elif r.status_code == 200:
      suc += 1
      print(green, f'[VALID]{wh} {url}')  
