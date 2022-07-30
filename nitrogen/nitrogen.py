@@ -16,9 +16,6 @@ headers = {
 "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.600 Chrome/91.0.4472.106 Electron/13.1.4 Safari/537.36", 
 }
 
-nitro = ''.join(random.choices(string.ascii_letters + string.digits, k=16))
-url = f"https://discord.gift/{nitro}"
-check = f'https://discordapp.com/api/v9/entitlements/gift-codes/{nitro}?with_application=false&with_subscription_plan=true'
 def gen():
  nitro = ''.join(random.choices(string.ascii_letters + string.digits, k=16))
  url = f"https://discord.gift/{nitro}"
